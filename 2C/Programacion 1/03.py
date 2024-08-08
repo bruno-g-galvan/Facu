@@ -40,8 +40,7 @@ def calcularCostoSubte(num1):
         elif 41 <= i:
             precio = precio + int(precioSubte * 0.60)
         
-    print(precio)
-
+    print("El precio final con los descuentos aplicados es de:", precio)
 
 num1 = int(input("Ingrese el valor de viajes efectuados: "))
 

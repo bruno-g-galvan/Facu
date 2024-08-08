@@ -14,7 +14,7 @@ def valorMayor(num1, num2, num3):
     elif num3 > num1:
         if num3 > num2:
             return num3
-    return -1
+    return -1 
 
 num1 = int(input("Ingrese el valor para el primer numero positivo: "))
 

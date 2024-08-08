@@ -29,6 +29,20 @@ def calcularCostoSubte(num1):
     else:
         print("Failed to retrieve the webpage")
 
+    precio = 0
+    for i in range(1, num1 + 1):
+        if 1 <= i <= 20:
+            precio = precio + precioSubte
+        elif 21 <= i <= 30:
+            precio = precio + int(precioSubte * 0.80)
+        elif 31 <= i <= 40:
+            precio = precio + int(precioSubte * 0.70)
+        elif 41 <= i:
+            precio = precio + int(precioSubte * 0.60)
+        
+    print(precio)
+
+
 num1 = int(input("Ingrese el valor de viajes efectuados: "))
 
 while num1 <= 0:
